@@ -29,6 +29,7 @@ module XuanThuLab
 
  
       model.commit_operation
+      
     end
 
     #  Thêm menu
