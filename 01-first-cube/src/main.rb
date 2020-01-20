@@ -13,6 +13,9 @@ module XuanThuLab
       group = model.active_entities.add_group
       entities = group.entities
 
+ 
+      
+
       # Định nghĩa mảng tọa độ các điểm
       points = [
         Geom::Point3d.new(0,   0,   0),
@@ -21,12 +24,15 @@ module XuanThuLab
         Geom::Point3d.new(0,   1.m, 0)
       ]
 
+
+
       # Tạo face từ các điểm
       face = entities.add_face(points)
 
       # thực hiện push face tạo khối 3D
-      face.pushpull(-1.m)
+      face.pushpull(-2.m)
 
+      puts entities
  
       model.commit_operation
       
