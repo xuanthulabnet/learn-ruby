@@ -3,7 +3,8 @@
     Đoạn comment này viết trên nhiều dòng
 =end
 
-puts "Hello world!"
+puts "Hello world!" 
+puts("AAA")
 
 # Có thể dùng lệnh print "chuỗi" để in ra chuỗi
 # không có xuống dòng sau khi in ra
