@@ -16,3 +16,12 @@ pts[1] = [width, 0, 0]
 pts[2] = [width, depth, 0]
 pts[3] = [0, depth, 0]
 face = entities.add_face(pts)
+
+
+
+
+
+new_line = Sketchup.active_model.entities.add_line [0,0,0], [2,2,5]
+box = new_line.bounds
+box.center
+box.diagonal
