@@ -1,0 +1,15 @@
+
+{
+
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Debug SketchUp 2017",
+        "type": "shell",
+        "command": "open -a '/Applications/SketchUp 2919/SketchUp.app' --args -rdebug 'ide port=7000'",
+        "windows": {
+          "command": "&'C:/Program Files/SketchUp/SketchUp 2019/SketchUp.exe' -rdebug 'ide port=7000'"
+        }
+      }
+    ]
+}
