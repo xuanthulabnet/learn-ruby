@@ -37,3 +37,4 @@ def crete_face
     # Gán material vào face
     face.material =  matabc
 end
+
