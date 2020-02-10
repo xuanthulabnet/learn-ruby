@@ -4,6 +4,7 @@
 require 'sketchup.rb'
 require 'extensions.rb'
 
+
 def findface(normal = [0,0,1])
     # Tìm 1 Face đầu tiên có pháp tuyến normal
     Sketchup.active_model.selection.clear           # xóa selection
