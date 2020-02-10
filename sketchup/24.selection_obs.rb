@@ -22,3 +22,11 @@ selob = SelObserver.new
 
 sel.add_observer selob
 # sel.remove_observer selob
+
+
+cmd = UI::Command.new("Xin chào 2") {
+    UI.messagebox("Xin chào 2")
+}
+menu = UI.menu('View')
+menu.add_item(cmd)
+
