@@ -4,7 +4,7 @@
 # You also want to add the path to where you have the extension's sources.
 # (In this example it would be in a `src` directory relative to .solargraph.yml)
 require_paths:
-- "C:/Program Files/SketchUp/SketchUp 2018/Tools"
+- "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/Casks/"
 - src
 
 # This will load the stubs for the SketchUp API.
