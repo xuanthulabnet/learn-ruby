@@ -22,5 +22,5 @@ dialog = UI::HtmlDialog.new(
   :style => UI::HtmlDialog::STYLE_DIALOG  
 })
 
-dialog.set_file(__dir__ + '/file1.html')
+dialog.set_file(__dir__ + '/file2.html')
 dialog.show

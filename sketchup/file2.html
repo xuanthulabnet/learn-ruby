@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ví dụ HTML</title>
+  <style>
+      #body {
+        background-color:bisque;
+        color: #333;
+      }
+
+  </style>
+  <script>
+       var i = 0;
+       function addcontent()
+       {
+           i++;
+           alert("Sẽ thêm nội dung HTML");
+           let bd = document.getElementById('body');
+           var n = document.createElement("p");
+           n.textContent = "Nội dung chèn vào " + i;
+           bd.prepend(n);
+       }
+  </script>
+</head>
+<body id="body">
+    <h1>Xin chào, đây là nội dung HTML</h1>
+    <input type="button" value="Thêm nội dung" onclick="addcontent();" />
+</body>
+</html>
