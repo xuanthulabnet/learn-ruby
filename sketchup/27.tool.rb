@@ -27,8 +27,17 @@ class MyLineTool
   def onCancel(reason, view)
     puts "Hủy chọn tool ##{reason} trong view: #{view}"
   end
-  # Khi công cụ cần vẽ
-  def draw(view)
+  # Vẽ thông tin trong View
+  def draw(view) 
+    options = {
+      :font => "Arial",
+      :size => 20,
+      :bold => true,
+      :align => TextAlignRight
+    }
+    point = Geom::Point3d.new(200, 200, 0)
+    view.draw_text(point, "Test - Đây là công cụ Line", options)
+
     view.drawing_color = Sketchup::Color.new(255, 0, 0, 64)
     if !@pointmove.nil?
         # Vẽ điểm tại chuột
