@@ -83,3 +83,4 @@ $dialoginfo = UI::HtmlDialog.new(
   
   $dialoginfo.set_file(__dir__ + '/28.ruby-call-js.html')
   $dialoginfo.show
+  

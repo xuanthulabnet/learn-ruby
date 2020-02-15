@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+  <script>
+        
+       function send()
+       {
+
+        let points = Array();
+        for (let index = 1; index <= 4; index++) {
+            let point = {}
+            point["x"] = document.getElementById('x' + index).value
+            point["y"] = document.getElementById('y' + index).value
+            point["z"] = document.getElementById('z' + index).value
+            points.push(point)
+        }
+
+
+
+
+        sketchup.create_face(points, {
+            onCompleted: function(ob) {
+            }
+          });
+
+       }
+  </script>
+</head>
+<body>
+    <div class="container pt-3">
+       <div class="card w-100">
+          <div class="card-body">
+            <p><strong>Tạo mặt từ các điểm</strong></p>
+            <!-- Location of the first vertex -->
+                Điểm 1:
+                <input type="text" id="x1" value="0.0" size="10" maxlength="6"/> <input type="text" id="y1" value="0.0" size="10" maxlength="6"/> <input type="text" id="z1" value="0.0" size="10" maxlength="6"/> <br /><br />
+                <!-- Location of the second vertex -->
+                Điểm 2:
+                <input type="text" id="x2" value="10.0" size="10" maxlength="6"/> <input type="text" id="y2" value="0.0" size="10" maxlength="6"/> <input type="text" id="z2" value="0.0" size="10" maxlength="6"/> <br /><br />
+                <!-- Location of the third vertex -->
+                Điểm 3:
+                <input type="text" id="x3" value="10.0" size="10" maxlength="6"/> <input type="text" id="y3" value="10.0" size="10" maxlength="6"/> <input type="text" id="z3" value="0.0" size="10" maxlength="6"/> <br /><br />
+                <!-- Location of the fourth vertex -->
+                Điểm 4:
+                <input type="text" id="x4" value="0.0" size="10" maxlength="6"/> <input type="text" id="y4" value="10.0" size="10" maxlength="6"/> <input type="text" id="z4" value="0.0" size="10" maxlength="6"/> <br /><br />
+            <input class="btn btn-success" type="button" onclick="send()" value="Tạo Face">
+          </div>
+       </div>
+    </div>
+</body>
+</html>
