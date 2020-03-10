@@ -11,7 +11,7 @@ def abc(val1, val2, val3)
     # @type [Integer] number
     puts "#{number}"
   end
-  
-
 end
+
+# https://rubydoc.info/gems/yard/file/docs/Tags.md#Tag_List
 
